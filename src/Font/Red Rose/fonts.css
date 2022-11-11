@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "RedRose-Bold";
+    src: url("./RedRose-Bold.ttf") format("woff");
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "RedRose-Bold Italics";
+    src: url("./RedRose-Bold.ttf") format("woff");
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "RedRose-SemiBold";
+    src: url("./RedRose-SemiBold.ttf") format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "RedRose-SemiBold Italics";
+    src: url("./RedRose-SemiBold.ttf") format("woff");
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "RedRose-Medium";
+    src: url("./RedRose-Medium.ttf") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "RedRose-Medium Italics";
+    src: url("./RedRose-Medium.ttf") format("woff");
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "RedRose-Regular";
+    src: url("./RedRose-Regular.ttf") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "RedRose-Regualar Italics";
+    src: url("./RedRose-Regular.ttf") format("woff");
+    font-weight: 500;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "RedRose-Light";
+    src: url("./RedRose-Light.ttf") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "RedRose-Light Italics";
+    src: url("./RedRose-Light.ttf") format("woff");
+    font-weight: 400;
+    font-style: italic;
+  }
+  
