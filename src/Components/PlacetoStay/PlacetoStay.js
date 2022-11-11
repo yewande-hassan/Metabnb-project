@@ -1,6 +1,6 @@
 import React from "react";
 export default function PlacetoStay(){
     return(
-        <h1>Hello</h1>
+        <h1>I need somewhere to stay</h1>
     )
 }
