@@ -5,3 +5,12 @@
     background-color: #A02279;
     border-radius: 10px;
 }
+@media screen and (max-width: 480px) {
+    .links {
+      display: flex;
+      flex-direction: column;
+    }
+    .button{
+        padding: 5px 10px;
+    }
+  }

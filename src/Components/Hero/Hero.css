@@ -1,0 +1,17 @@
+.heroHeading{
+    font-family: "RedRose-Bold" !important;
+    font-size: 56px;
+    color: #434343;
+}
+.heroHeadingColored{
+    color: #A02279;
+}
+.heroParagraph{
+    color: #434343;
+}
+@media screen and (max-width: 480px) {
+    .image{
+        display: none;
+    }
+    }
+  

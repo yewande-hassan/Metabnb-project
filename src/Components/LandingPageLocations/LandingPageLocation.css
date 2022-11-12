@@ -1,0 +1,14 @@
+.header{
+    background: #A02279;
+}
+.paragraph{
+    font-family: "RedRose-SemiBold";
+    color: white;
+    font-size: 30px; 
+}
+.heading{
+    font-family: "RedRose-SemiBold";
+    font-size: 45px; 
+    text-align: center;
+    font-weight: 700;
+}
