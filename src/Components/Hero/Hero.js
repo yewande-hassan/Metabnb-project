@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../Image/Image";
-import HeroImage from "../images/HeroImage.svg"
+import HeroImage from "../images/heroImage.svg"
 import "./Hero.css"
 export default function Hero(){
     return (
