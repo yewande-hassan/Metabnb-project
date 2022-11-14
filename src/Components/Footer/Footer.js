@@ -14,7 +14,7 @@ export default function Footer(){
           images={FooterLogo}
           alt={"Logo"}
         />
-        <div className="flex mt-16">
+        <div className="icons flex mt-16">
         <Image
           images={facebookicon}
           alt={"facebookicon"}

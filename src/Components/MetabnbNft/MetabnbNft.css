@@ -15,6 +15,9 @@
     opacity: 0.9;
 }
 @media screen and (max-width: 480px) {
+    .nftSection{
+        padding: 5px;
+    }
     .metabnbHeading{
         font-weight: 700;
         font-size: 40px;

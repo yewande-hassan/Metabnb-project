@@ -6,7 +6,7 @@ import "./MetabnbNft.css"
 export default function MetabnbNft(){
     return (
       <div className="nftSection items-center sm:w-full md:w-full lg:flex lg:justify-around lg:p-16">
-        <div className="basis-2/5 pl-7">
+        <div className="basis-2/5 md:px-7">
           <h1 className="metabnbHeading md:text-left sm:text-center">
             Metabnb NFTs
           </h1>
@@ -16,7 +16,7 @@ export default function MetabnbNft(){
             access to loads of our exclusive services.
           </p>
             <button
-              class="btns w-1/2 px-4 py-3 text-sm text-purple-600 font-semibold rounded-lg border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
+              class="btns w-auto my-5 px-4 py-3 text-sm text-purple-600 font-semibold rounded-lg border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
               type="submit"
             >
               Learn More
