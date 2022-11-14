@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap');
 .nftSection{
     background-color: #A02279;
+    color:white;
 }
-.heroHeading{
-    font-family: "RedRose-Bold" !important;
-    font-size: 56px;
-    color: #434343;
+.metabnbHeading{
+    font-family: 'Red Rose', cursive;
+    font-size: 56px;   
 }
-.heroParagraph{
-    color: #434343;
+.btns{
+    background-color: #A02279;
+    color: #fff;
 }
-
+.btn:hover{
+    opacity: 0.9;
+}
+@media screen and (max-width: 480px) {
+    .metabnbHeading{
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+    }
+    }
