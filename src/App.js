@@ -3,6 +3,7 @@ import Hero from './Components/Hero/Hero';
 import Navbar from './Components/Navbar/Navbar';
 import LandingPageLocation from './Components/LandingPageLocations/LandingPageLocation';
 import MetabnbNft from './Components/MetabnbNft/MetabnbNft';
+import Footer from "./Components/Footer/Footer"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <LandingPageLocation />
       <MetabnbNft />
+      <Footer/>
     </div>
   );
 }

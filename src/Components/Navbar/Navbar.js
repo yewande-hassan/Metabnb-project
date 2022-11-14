@@ -1,11 +1,14 @@
 import { useState } from "react";
 import Image from "../Image/Image.js";
 import MetaLogo from "../images/MetaLogo.svg";
+import metamaskIcon from "../images/metamaskIcon.svg";
+import walletconnectIcon from "../images/walletconnectIcon.svg";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     return (
       <nav className="w-full bg-white">
@@ -65,7 +68,7 @@ export default function NavBar() {
                 navbar ? "block" : "hidden"
               }`}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <ul className="items-center text-xl justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="text-gray-600 hover:text-blue-600">
                   <Link to="/">Home</Link>
                 </li>
@@ -83,17 +86,57 @@ export default function NavBar() {
           </div>
           <div>
             <button
-              className={`text-white button hover:opacity-70 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              className={`text-white button hover:opacity-70 md:block text-base rounded hover:text-black-500 lg:mt-0 ${
                 navbar ? "block" : "hidden"
               }`}
+              onClick={() => setShowModal(true)}
             >
-              <Link
-                to="/"
-                className="inline-block text-sm p-4 leading-none rounded hover:text-black-500 lg:mt-0"
-              >
                 Connect wallet
-              </Link>
             </button>
+            {showModal ? (
+        <>
+          <div className="backdrop-opacity-10 backdrop-invert bg-black/30 flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+            <div className="relative w-auto lg:w-2/5 my-6 mx-auto max-w-7xl shadow-md">
+              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t ">
+                  <h3 className="text-3xl font-semibold">Connect Wallet</h3>
+                  <button
+                    className="bg-transparent border-0 text-black float-right"
+                    onClick={() => setShowModal(false)}
+                  >
+                    <span className="text-black opacity-7 h-6 w-6 text-3xl block py-0 rounded-full">
+                      x
+                    </span>
+                  </button>
+                </div>
+                <div className="relative p-6 flex-auto">
+                  <p>Choose your preferred wallet:</p>
+                  <div className="bg-white-200 rounded  pt-6 pb-8 w-full">
+                    <button className="shadow-md bg-slate-200 appearance-none border rounded w-full mb-3 py-2 px-3 text-black text-left" >
+                    <Image
+                  images={metamaskIcon}
+                  alt={"metamaskIcon"}
+                  height={30}
+                  width={30}
+                  className={"inline mr-2"}
+                />
+                      Metamask</button>
+                    <button className="shadow-md bg-white-200 appearance-none border rounded w-full py-2 px-3 text-black text-left">
+                    <Image
+                  images={walletconnectIcon}
+                  alt={"walletconnectIcon"}
+                  height={30}
+                  width={30}
+                  className={"inline mr-2"}
+                />
+                      WalletConnect</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      ) : null}
           </div>
         </div>
       </nav>
