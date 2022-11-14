@@ -1,10 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap');
 
 body {
   margin: 0;
-  font-family: "RedRose-Light";
+  box-sizing: border-box;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Red Rose', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

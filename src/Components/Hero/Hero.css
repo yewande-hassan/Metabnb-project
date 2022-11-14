@@ -1,17 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap');
+
 .heroHeading{
-    font-family: "RedRose-Bold" !important;
-    font-size: 56px;
+    font-family: 'Red Rose', cursive;
+    font-weight: 700;
     color: #434343;
 }
 .heroHeadingColored{
     color: #A02279;
 }
 .heroParagraph{
+    font-family: 'Red Rose', cursive;
     color: #434343;
+}
+.input{
+    border-right: none;
+    border-top-right-radius: none;
+    border-bottom-right-radius: none;
+}
+.btn{
+    border-left: none;
+    background-color: #A02279;
+    color: #fff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.btn:hover{
+    opacity: 0.9;
 }
 @media screen and (max-width: 480px) {
     .image{
-        display: none;
+        padding: 20px;
+    }
+    .hero{
+        margin: 0 10px ;
+    }
+    .heroHeading{
+        font-family: 'Red Rose', cursive;
+        font-weight: 700;
+        color: #434343;
+        text-align: center;
     }
     }
   

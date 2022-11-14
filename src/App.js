@@ -7,11 +7,11 @@ import MetabnbNft from './Components/MetabnbNft/MetabnbNft';
 function App() {
   return (
     <div>
-   <Navbar/>
-   <Hero/>
-   <LandingPageLocation/>
-   <MetabnbNft/>
-   </div>
+      <Navbar />
+      <Hero />
+      <LandingPageLocation />
+      <MetabnbNft />
+    </div>
   );
 }
 
