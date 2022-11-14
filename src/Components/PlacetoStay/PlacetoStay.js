@@ -1,12 +1,16 @@
 import React from "react";
 import Card from "../Card/Card";
+import Footer from "../Footer/Footer";
 import location from "../Location/placetostay";
-import Navbar from "../Navbar/Navbar"
+import Image from "../Image/Image";
+import setting5 from "../images/setting5.svg";
+import Navbar from "../Navbar/Navbar";
+import "./PlacetoStay.css"
 export default function PlacetoStay(){
     return(
        <div>
         <Navbar/>
-        <div className="flex flex-row justify-around my-10">
+        <div className="option flex flex-row justify-around my-16 items-center">
             <p>Resturant</p>
             <p>Cottage</p>
             <p>Castle</p>
@@ -15,9 +19,16 @@ export default function PlacetoStay(){
             <p>Cabins</p>
             <p>Off-grid</p>
             <p>Farm</p>
-            <button className="border-solid border-2 border-gray-300 px-5 py-1 rounded-lg">Location</button>
+            <button className="border-solid border-2 border-gray-300 px-5 py-1 rounded-lg">Location
+            <Image
+                  images={setting5}
+                  alt={"setting5"}
+                  height={20}
+                  width={20}
+                  className={"inline ml-3"}
+                /></button>
         </div>
-        <div className=" md:grid grid-cols-2 gap-4 lg:grid-cols-4 gap-1">
+        <div className=" m-10 md:grid grid-cols-2 gap-4 lg:grid-cols-4 gap-1">
         {location.map((locations,index)=>{
             return(
                 <Card
@@ -32,6 +43,7 @@ export default function PlacetoStay(){
             )
         })}
         </div>
+        <Footer/>
        </div> 
     )
 }

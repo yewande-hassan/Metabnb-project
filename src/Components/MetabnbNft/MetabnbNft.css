@@ -8,8 +8,8 @@
     font-size: 56px;   
 }
 .btns{
-    background-color: #A02279;
-    color: #fff;
+    background-color: #fff;
+    color: #A02279;
 }
 .btn:hover{
     opacity: 0.9;

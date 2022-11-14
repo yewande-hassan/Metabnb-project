@@ -1,0 +1,9 @@
+.footer{
+    background-color: #1D1D1E;
+}
+@media screen and (max-width: 480px) {
+
+ .footerheading{
+    margin-top: 10px;
+ }
+    }

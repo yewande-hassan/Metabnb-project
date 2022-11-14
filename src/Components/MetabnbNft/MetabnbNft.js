@@ -5,12 +5,12 @@ import "./MetabnbNft.css"
 
 export default function MetabnbNft(){
     return (
-      <div className="nftSection sm:w-full md:w-full lg:flex lg:justify-around lg:p-16">
-        <div className="basis-2/5 p-7">
+      <div className="nftSection items-center sm:w-full md:w-full lg:flex lg:justify-around lg:p-16">
+        <div className="basis-2/5 pl-7">
           <h1 className="metabnbHeading md:text-left sm:text-center">
             Metabnb NFTs
           </h1>
-          <p className="metabnbParagraph">
+          <p className="metabnbParagraph mb-3">
             Discover our NFT gift cards collection. Loyal customers gets amazing
             gift cards which are traded as NFTs. These NFTs gives our cutomer
             access to loads of our exclusive services.
