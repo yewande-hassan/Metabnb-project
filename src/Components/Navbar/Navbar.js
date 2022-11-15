@@ -3,6 +3,7 @@ import Image from "../Image/Image.js";
 import MetaLogo from "../images/MetaLogo.svg";
 import metamaskIcon from "../images/metamaskIcon.svg";
 import walletconnectIcon from "../images/walletconnectIcon.svg";
+import DownChevron from "../images/DownChevron.svg";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -91,52 +92,75 @@ export default function NavBar() {
               }`}
               onClick={() => setShowModal(true)}
             >
-                Connect wallet
+              Connect wallet
             </button>
             {showModal ? (
-        <>
-          <div className="backdrop-opacity-10 backdrop-invert bg-black/30 flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="relative w-auto lg:w-2/5 my-6 mx-auto max-w-7xl shadow-md">
-              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t ">
-                  <h3 className="text-3xl font-semibold">Connect Wallet</h3>
-                  <button
-                    className="bg-transparent border-0 text-black float-right"
-                    onClick={() => setShowModal(false)}
-                  >
-                    <span className="text-black opacity-7 h-6 w-6 text-3xl block py-0 rounded-full">
-                      x
-                    </span>
-                  </button>
-                </div>
-                <div className="relative p-6 flex-auto">
-                  <p>Choose your preferred wallet:</p>
-                  <div className="bg-white-200 rounded  pt-6 pb-8 w-full">
-                    <button className="shadow-md bg-slate-200 appearance-none border rounded w-full mb-3 py-2 px-3 text-black text-left" >
-                    <Image
-                  images={metamaskIcon}
-                  alt={"metamaskIcon"}
-                  height={30}
-                  width={30}
-                  className={"inline mr-2"}
-                />
-                      Metamask</button>
-                    <button className="shadow-md bg-white-200 appearance-none border rounded w-full py-2 px-3 text-black text-left">
-                    <Image
-                  images={walletconnectIcon}
-                  alt={"walletconnectIcon"}
-                  height={30}
-                  width={30}
-                  className={"inline mr-2"}
-                />
-                      WalletConnect</button>
+              <>
+                <div className="backdrop-opacity-10 backdrop-invert bg-black/30 flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                  <div className="relative w-auto lg:w-2/5 my-6 mx-auto max-w-7xl shadow-md">
+                    <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                      <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t ">
+                        <h3 className="text-3xl font-semibold">
+                          Connect Wallet
+                        </h3>
+                        <button
+                          className="bg-transparent border-0 text-black float-right"
+                          onClick={() => setShowModal(false)}
+                        >
+                          <span className="text-black opacity-7 h-6 w-6 text-3xl block py-0 rounded-full">
+                            x
+                          </span>
+                        </button>
+                      </div>
+                      <div className="relative p-6 flex-auto">
+                        <p>Choose your preferred wallet:</p>
+                        <div className="bg-white-200 rounded  pt-6 pb-8 w-full">
+                          <div>
+                            <Image
+                              images={metamaskIcon}
+                              alt={"metamaskIcon"}
+                              height={30}
+                              width={30}
+                              className={"avatarmeta inline mr-2"}
+                            />
+                            <button className="modalbutton shadow-md bg-slate-200 appearance-none border rounded w-full mb-3 py-2 px-3 text-black text-left">
+                              Metamask
+                            </button>
+                            <Image
+                              images={DownChevron}
+                              alt={"DownChevron"}
+                              height={20}
+                              width={20}
+                              className={"arrow2 inline"}
+                            />
+                          </div>
+
+                          <div>
+                            <Image
+                              images={walletconnectIcon}
+                              alt={"walletconnectIcon"}
+                              height={30}
+                              width={30}
+                              className={"avatar inline mr-2"}
+                            />
+                            <button className="modalbutton shadow-md bg-white-200 appearance-none border rounded w-full py-2 px-3 text-black text-left">
+                              WalletConnect
+                            </button>
+                            <Image
+                              images={DownChevron}
+                              alt={"DownChevron"}
+                              height={20}
+                              width={20}
+                              className={"arrow1 inline "}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </>
-      ) : null}
+              </>
+            ) : null}
           </div>
         </div>
       </nav>
