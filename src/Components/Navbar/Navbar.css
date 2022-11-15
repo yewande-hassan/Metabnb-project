@@ -6,7 +6,31 @@
     border-radius: 10px;
     padding: 10px;
 }
-
+.modalbutton{
+    position: relative;
+    padding-left:35px;
+}
+.avatar{
+    position: absolute;
+    bottom:65px;
+    padding-left: 3px;
+}
+.avatarmeta{
+    position: absolute;
+    top:80px;
+    z-index: 500;
+    padding-left: 3px;
+}
+.arrow1{
+    position: absolute; 
+    right:30px;
+    bottom:65px;
+}
+.arrow2{
+    position: absolute; 
+    right:30px;
+    bottom:120px;
+}
 @media screen and (max-width: 480px) {
     .links {
       display: flex;
