@@ -31,7 +31,7 @@ export default function LandingPageLocation(){
         </div>
         <div>
           <h3 className="heading">Inspiration for your next adventure</h3>
-          <div className=" md:grid grid-cols-2 gap-4 lg:grid-cols-4 gap-1 p-8">
+          <div className=" locations md:grid grid-cols-2 gap-4 lg:grid-cols-4 gap-1 p-8">
             {locations.map((frames, index) => {
               return (
                 <Card
