@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "../Image/Image";
-import HeroImage from "../images/HeroImage.svg";
+import HeroImage from "../images/HeroImage.webp";
 import "./Hero.css"
 export default function Hero(){
     return (
       <div className="hero sm:m-4 lg:flex lg:justify-around lg:p-8 items-center">
-        <div className="basis-2/5 lg:w-3/5">
+        <div className="lg:basis-2/5 lg:w-3/5">
           <h2 className="heroHeading text-4xl font-bold mb-5">
             Rent a <span className="heroHeadingColored">Place</span> away from{" "}
             <span>Home</span> in the{" "}
@@ -35,7 +35,9 @@ export default function Hero(){
           <Image
             images={HeroImage}
             alt={"Hero Image"}
-            className={"basis-3/5 image md:m-auto"}
+            width={500}
+            height={500}
+            className={"lg:basis-3/5 image"}
           />
         </div>
       </div>

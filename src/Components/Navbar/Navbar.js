@@ -13,7 +13,7 @@ export default function NavBar() {
 
     return (
       <nav className="w-full bg-white">
-        <div className="justify-between px-4 md:mt-5 mb-8 lg:max-w-7xl md:items-center md:flex md:px-8">
+        <div className="justify-between px-4 md:mt-5 mb-8 lg:w-full md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <Link to="/">
@@ -70,16 +70,16 @@ export default function NavBar() {
               }`}
             >
               <ul className="items-center text-xl justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                <li className="text-gray-600 hover:text-blue-600">
+                <li className="text-gray-600 hover:text-fuchsia-900">
                   <Link to="/">Home</Link>
                 </li>
-                <li className="text-gray-600 hover:text-blue-600">
+                <li className="text-gray-600 hover:text-fuchsia-900">
                   <Link to="/place-to-stay">Place to stay</Link>
                 </li>
-                <li className="text-gray-600 hover:text-blue-600">
+                <li className="text-gray-600 hover:text-fuchsia-900">
                   <Link to="/nft">NFTs</Link>
                 </li>
-                <li className="text-gray-600 hover:text-blue-600">
+                <li className="text-gray-600 hover:text-fuchsia-900">
                   <Link to="/community">Community</Link>
                 </li>
               </ul>

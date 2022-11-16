@@ -24,3 +24,16 @@
         text-align: center;
     }
     }
+    @media screen and (min-width: 480px) and (max-width:768px) {
+        .image{
+            padding: 20px;
+            margin: 0;
+        }
+        .nftSection{
+            padding: 10px;
+        }
+        .metabnbHeading{
+            font-weight: 700;
+            font-size: 40px;
+        }
+    }

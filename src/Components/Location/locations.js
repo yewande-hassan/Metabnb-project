@@ -1,11 +1,11 @@
-import Frame1 from "../images/Frame1.svg";
-import Frame2 from "../images/Frame2.svg";
-import Frame3 from "../images/Frame3.svg";
-import Frame4 from "../images/Frame4.svg";
-import Frame5 from "../images/Frame5.svg";
-import Frame6 from "../images/Frame6.svg";
-import Frame7 from "../images/Frame7.svg";
-import Frame8 from "../images/Frame8.svg";
+import Frame1 from "../images/Frame1.webp";
+import Frame2 from "../images/Frame2.webp";
+import Frame3 from "../images/Frame3.webp";
+import Frame4 from "../images/Frame4.webp";
+import Frame5 from "../images/Frame5.webp";
+import Frame6 from "../images/Frame6.webp";
+import Frame7 from "../images/Frame7.webp";
+import Frame8 from "../images/Frame8.webp";
 import star5 from "../images/Star5.svg"
 
 

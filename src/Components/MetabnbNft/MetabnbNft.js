@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../Image/Image";
-import NftImage from "../images/NftImage.svg"
+import NftImage from "../images/metabnbimage.webp"
 import "./MetabnbNft.css"
 
 export default function MetabnbNft(){
@@ -27,6 +27,8 @@ export default function MetabnbNft(){
             images={NftImage}
             alt={"NftImage"}
             className={"basis-3/5 image"}
+            width={500}
+            height={500}
           />
         </div>
       </div>
